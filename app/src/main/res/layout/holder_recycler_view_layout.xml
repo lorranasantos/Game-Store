@@ -28,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="FIREWATCH"
+            android:layout_margin="8dp"
             app:layout_constraintTop_toBottomOf="@+id/image_game"
             app:layout_constraintStart_toStartOf="parent"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
@@ -37,6 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/text_view_game_name"
+            android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="parent">
 
             <com.google.android.material.chip.Chip
@@ -56,6 +58,7 @@
             android:id="@+id/text_view_game_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="Firewatch é um jogo eletrônico de aventura desenvolvido pela Campo Santo e publicado pela desenvolvedora em parceria com a Panic."
             app:layout_constraintTop_toBottomOf="@+id/chip_group_consoles"
             app:layout_constraintStart_toStartOf="parent"/>
@@ -74,14 +77,7 @@
             android:scaleY="0.8"
             android:transformPivotX="0dp"/>
 
-        <Button
-            android:id="@+id/button_detail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Detalhes"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
