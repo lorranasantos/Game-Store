@@ -5,9 +5,20 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.testefragment.R
+import com.example.testefragment.adapter.GameAdapter
+import com.example.testefragment.data.dao.GameDataSource
+import com.example.testefragment.model.Game
 
 class GameFragment : Fragment() {
+
+    private lateinit var recyclerGames: RecyclerView
+    private val gameAdapter = GameAdapter()
+    private var gameList = listOf<Game>()
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +29,23 @@ class GameFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_game, container, false)
+        val view = inflater.inflate(R.layout.fragment_game, container, false)
+
+        //instanciar a RecyclerView
+        recyclerGames = view.findViewById(R.id.recycler_view_games)
+
+        //Determinar a orientação da recycler view
+        recyclerGames.layoutManager = LinearLayoutManager(view.context)
+
+        //Informar para a recycler view quem é o adapter que ela vai usar
+        recyclerGames.adapter = gameAdapter
+
+        //Dizer ao adapter qual é a fonte de dados
+        gameList = GameDataSource.getGames(view.context)
+
+        gameAdapter.updateGameList(gameList)
+
+
+        return view
     }
 }

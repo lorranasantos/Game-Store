@@ -39,19 +39,10 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/text_view_game_name"
             android:layout_marginTop="8dp"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp">
 
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PS4"
-                android:theme="@style/Theme.MaterialComponents.Light"/>
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Xbox One"
-                android:theme="@style/Theme.MaterialComponents.Light"/>
+            //os chips são inseridos via programação
 
         </com.google.android.material.chip.ChipGroup>
         <TextView
@@ -61,15 +52,18 @@
             android:layout_marginTop="8dp"
             android:text="Firewatch é um jogo eletrônico de aventura desenvolvido pela Campo Santo e publicado pela desenvolvedora em parceria com a Panic."
             app:layout_constraintTop_toBottomOf="@+id/chip_group_consoles"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
 
         <RatingBar
-            android:id="@+id/rating_bar"
+            android:id="@+id/rating_bar_game"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/text_view_game_description"
             app:layout_constraintStart_toStartOf="parent"
             style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:numStars="5"
             android:rating="2.5"
             android:stepSize="0.5"
