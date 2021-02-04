@@ -33,7 +33,7 @@ class GameDataSource {
                 ))
 
             )
-            games.add(Game(4, "Scape from Tarkov", Context.getDrawable(R.drawable.tarkov)!!, "Escape from Tarkov é um videogame de tiro em primeira pessoa que está sendo desenvolvido pelo estúdio russo Battlestate Games. Um alfa fechado do jogo foi disponibilizado para usuários selecionados em 28 de dezembro de 2016.", 4.5f,
+            games.add(Game(4, "Escape from Tarkov", Context.getDrawable(R.drawable.tarkov)!!, "Escape from Tarkov é um videogame de tiro em primeira pessoa que está sendo desenvolvido pelo estúdio russo Battlestate Games. Um alfa fechado do jogo foi disponibilizado para usuários selecionados em 28 de dezembro de 2016.", 4.5f,
                 listOf(
                     Console(1, "PlayStation 2", "Sony", "1996-12-01"),
                     Console(2, "PC", "Dell", "1999-12-04"),
