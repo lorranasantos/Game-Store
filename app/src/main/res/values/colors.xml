@@ -4,7 +4,9 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="backgroundHome">#e1f5d7</color>
-    <color name="backgroundConsole">#f3f5d3</color>
+    <color name="backgroundConsole">#263238</color>
     <color name="backgroundGame">#acb0b0</color>
     <color name="preto">#000000</color>
+
+    <color name="constraintConsole">#4f5b62</color>
 </resources>
