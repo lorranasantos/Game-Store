@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimary">#e0e0e0</color>
+    <color name="colorPrimaryDark">#aeaeae</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="backgroundHome">#e1f5d7</color>
     <color name="backgroundConsole">#263238</color>
-    <color name="backgroundGame">#acb0b0</color>
+    <color name="backgroundGame">#f0f0f0</color>
     <color name="preto">#000000</color>
+    <color name="toolbarcolor">#e0e0e0</color>
 
     <color name="constraintConsole">#4f5b62</color>
 </resources>

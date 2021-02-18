@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.ConsoleFragment"
-    android:background="@color/backgroundConsole">
+    android:background="@color/backgroundGame">
 
    <androidx.recyclerview.widget.RecyclerView
        android:id="@+id/recycler_view_consoles"
