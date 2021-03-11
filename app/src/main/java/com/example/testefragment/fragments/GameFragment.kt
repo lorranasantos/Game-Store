@@ -38,10 +38,10 @@ class GameFragment : Fragment() {
         //Informar para a recycler view quem é o adapter que ela vai usar
         recyclerGames.adapter = gameAdapter
 
-        //Dizer ao adapter qual é a fonte de dados
-        gameList = GameDataSource.getGames(view.context)
-
-        gameAdapter.updateGameList(gameList)
+//        //Dizer ao adapter qual é a fonte de dados
+//        gameList = GameDataSource.getGames(view.context)
+//
+//        gameAdapter.updateGameList(gameList)
 
         // *** tornar o menu visivel
         setHasOptionsMenu(true)

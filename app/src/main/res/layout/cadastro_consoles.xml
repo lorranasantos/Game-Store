@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/text_insert_consoles"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+
+        android:text="Cadastro de Consoles"
+        android:textSize="25sp"
+
+        />
+
+    <EditText
+        android:id="@+id/edit_console_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:hint="Nome do Console"
+
+        app:layout_constraintTop_toBottomOf="@+id/text_insert_consoles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edit_console_maker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Fabricante"
+
+        app:layout_constraintTop_toBottomOf="@+id/edit_console_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edit_console_release"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Data de Lançamento"
+
+        app:layout_constraintTop_toBottomOf="@+id/edit_console_maker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edit_console_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Imagem"
+
+        app:layout_constraintTop_toBottomOf="@+id/edit_console_release"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/button_save_console"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+
+        app:layout_constraintTop_toBottomOf="@+id/edit_console_image"
+        app:layout_constraintEnd_toStartOf="@+id/button_cancel_console"/>
+
+    <Button
+        android:id="@+id/button_cancel_console"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+
+        app:layout_constraintTop_toBottomOf="@+id/edit_console_image"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

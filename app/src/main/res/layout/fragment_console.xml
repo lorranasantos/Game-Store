@@ -10,10 +10,16 @@
        android:id="@+id/recycler_view_consoles"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       tools:listitem="@layout/holder_console_layout">
+       tools:listitem="@layout/holder_console_layout"/>
 
-
-
-   </androidx.recyclerview.widget.RecyclerView>
+   <ImageButton
+       android:id="@+id/button_add_consoles"
+       android:layout_width="48dp"
+       android:layout_height="48dp"
+       android:src="@drawable/ic_baseline_add_24"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentEnd="true"
+       android:layout_margin="8dp"
+       android:background="@drawable/rounded_button"/>
 
 </RelativeLayout>
